@@ -9,7 +9,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
 import { ApiProvider } from '../providers/api/api';
 import { FormsModule } from '@angular/forms';
 import { ListsPage } from '../pages/lists/lists';
@@ -18,7 +17,6 @@ import { ItemsPage } from '../pages/items/items';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
     LoginPage,
     RegisterPage,
     ListsPage,
@@ -34,7 +32,6 @@ import { ItemsPage } from '../pages/items/items';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
     LoginPage,
     RegisterPage,
     ListsPage,
