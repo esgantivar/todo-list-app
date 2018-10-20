@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons>
+            <button ion-button (click)="logout()">
+              Salir
+            </button>
+        </ion-buttons>
+        <ion-title>Mis Listas</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="let list of lists" (click)="selectList(list)">
+            {{list.name}}
+        </button>
+    </ion-list>
+    <ion-fab right bottom>
+        <button ion-fab (click)="addList()">
+            <ion-icon name="add"></ion-icon>
+        </button>
+    </ion-fab>
+</ion-content>

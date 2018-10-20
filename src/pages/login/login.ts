@@ -2,6 +2,7 @@ import { ApiProvider } from './../../providers/api/api';
 import { RegisterPage } from './../register/register';
 import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
+import { ListsPage } from '../lists/lists';
 
 
 @Component({
@@ -36,6 +37,7 @@ export class LoginPage {
           duration: 1000
         })
         toast.present();
+        this.navCtrl.push(ListsPage);
       } else {
         const toast = this.toastCtrl.create({
           message: 'Correo o contraseña invalida',
